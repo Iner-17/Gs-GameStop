@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@600&family=Russo+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@
 
 nav {
   min-width: 100%;
-  height: 9vh;
+  height: 7vh;
   padding: 0 3%;
   margin: 0 auto;
   background-color: #202020;
@@ -66,6 +66,15 @@ a:hover {
   background: #000 no-repeat top/cover;
 }
 
+.products h1 {
+  font-family: "Russo One", sans-serif;
+  color: #202020;
+  font-weight: 50;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 44px;
+}
+
 .desktop_products {
   height: 100vh;
   margin-top: 5em;
@@ -77,8 +86,10 @@ a:hover {
 }
 
 .desktop_products h2 {
-  margin: 1em;
-  font-size: 34px;
+  font-family: "Russo One", sans-serif;
+  font-weight: 50;
+  margin: 1em 0.5em 1em;
+  font-size: 30px;
   text-transform: uppercase;
 }
 
