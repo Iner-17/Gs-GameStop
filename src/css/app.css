@@ -7,6 +7,7 @@
   font-family: segoeui, Microsoft JhengHei, sans-serif;
 }
 
+/* NAVBAR style start line */
 nav {
   min-width: 100%;
   height: 7vh;
@@ -59,6 +60,24 @@ a:hover {
   color: rgb(0, 255, 0);
 }
 
+.menu_icon {
+  display: none;
+}
+
+.menu_icon div {
+  display: block;
+  height: 2px;
+  width: 26px;
+  background: #fff;
+  margin: 5px;
+}
+
+.menu_icon .line1 {
+  width: 20px;
+}
+/* NAVBAR style END line */
+
+/*BANNER style START line */
 .banner {
   position: relative;
   height: 68vh;
@@ -136,4 +155,7 @@ a:hover {
 .desktop3 {
   position: relative;
   grid-area: desktop3;
+}
+
+@media screen and (max-width: 678px) {
 }
