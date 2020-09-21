@@ -100,12 +100,10 @@ a:hover {
 }
 
 .desktop_products {
-  height: 100vh;
   margin-top: 5em;
   display: grid;
-  grid-template-columns: 1fr 400px 400px 400px 1fr;
+  grid-template-columns: 20px 1fr 1fr 1fr 20px;
   grid-template-rows: 350px;
-  grid-column-gap: 5em;
   grid-template-areas: ". desktop1 desktop2 desktop3 .";
 }
 
@@ -121,6 +119,7 @@ a:hover {
 .desktop2,
 .desktop3 {
   height: 405px;
+  margin: 1em;
   text-align: center;
   padding: 20px;
   color: #fff;
@@ -137,7 +136,7 @@ a:hover {
   top: 0;
   left: -100px;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
   transition: 0.5s;
 }
 
@@ -162,19 +161,54 @@ a:hover {
   grid-area: desktop3;
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 1300px) {
+  .header_links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .desktop_products {
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      ". desktop1 ."
+      ". desktop2 ."
+      ". desktop3 .";
+  }
+
+  .desktop_products div {
+    width: 100%;
+    padding: 0;
+    margin: 1em 2em;
+  }
+  .desktop_products div img {
+    top: -40px;
+    height: auto;
+  }
+}
+
+/* hide the navlinks and show menu icon */
+@media screen and (max-width: 768px) {
+  .navbar .header_links {
+    display: none;
+  }
   .menu_icon {
     margin-left: 1em;
     display: block;
   }
+}
 
-  .header_links {
+@media screen and (max-width: 768px) {
+  .navbar.toggle-navbar .header_links {
     position: absolute;
     width: 100%;
     top: 7vh;
     left: 0;
     background: #202020;
-    display: none;
+    display: block;
     z-index: 1;
   }
 
